@@ -1,0 +1,43 @@
+#include <stdio.h>	
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main(){
+	
+	setlocale(LC_ALL, "portuguese_Brazil");
+
+
+    int N_CONTA;
+    float saldo, credito, debito;
+    
+    printf("digite o numero da sua conta");
+    scanf("%d",&N_CONTA);
+    
+    printf("qual é o seu saldo");
+    scanf("%f",&saldo);
+    
+    
+    printf("qual seu debito");
+    scanf("%f", &debito);
+    
+    printf("qual seu credito");
+    scanf("%f",&credito);
+    
+   if(saldo >=0){
+   	
+    printf("saldo positivo");
+    
+   }else{
+   	
+    printf("saldo negativo");
+   }  
+    
+    
+    
+  
+    
+   
+
+	return 0; 
+}
