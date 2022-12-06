@@ -1,0 +1,31 @@
+#include <stdio.h>	
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main(){
+	
+	setlocale(LC_ALL, "portuguese_Brazil");
+
+    float MAT, FREQ, N1, N2, MP, MF, PF;
+    
+    printf("por favor digite a sua matricula: ");
+    scanf("%f",&MAT);
+    
+    printf("qual numero da sua frequencia: ");
+    scanf("%f",&FREQ);
+    
+	printf("por favor digite a sua nota da N1: ");
+    scanf("%f",&N1);
+    
+	printf("por favor digite a sua nota da n2: ");
+    scanf("%f",&N2);
+    
+   MP = ((N1*2) + (N2*3)) / 5;
+   
+   printf("qual sua media passial.\n", MP);
+    
+   
+
+	return 0; 
+}
